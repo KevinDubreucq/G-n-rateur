@@ -1,0 +1,22 @@
+.Grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+                        "formulaire excuse"
+                        "formulaire excuse";
+}
+
+.formulaire {
+    grid-area: formulaire;
+    justify-self: center;
+    align-self: center;
+    padding-left: 20px;
+    margin: auto;
+}
+
+.excuse {
+    grid-area: excuse;
+    justify-self: left;
+    align-self: center;
+    
+}
