@@ -48,7 +48,7 @@
         ?> 
         <div class = "excuse">
             <?php
-                if ($genreprof == man) {
+                if ($genreprof == "man") {
                     echo "Monsieur $nameprof, ";
                 }
                 else {
@@ -57,20 +57,20 @@
             ?> 
             <br/>
             <?php
-                if ($genreel == man and $classeel != "") {
+                if ($genreel == "man" and $classeel != "") {
                     echo "Veuillez excuser mon fils $nameel, de la classe $classeel, ";
                 }
-                elseif ($genreel == woman and $classeel != "") {
+                elseif ($genreel == "woman" and $classeel != "") {
                     echo "Veuillez excuser ma fille $nameel, de la classe $classeel, ";
                 }
-                elseif ($genreel == man and $classeel != "") {
+                elseif ($genreel == "man" and $classeel = "") {
                     echo "Veuillez excuser mon fils $nameel, ";
                 }
                 else {
                     echo "Veuillez excuser ma fille $nameel, ";
                 }
 
-                if ($motif == etude) {
+                if ($motif == "etude") {
                     switch ($random1) {
                         case 1: 
                             echo "de n'avoir pas su étudier mais un zombie ";
@@ -134,7 +134,7 @@
                             break;
                     }
                 }
-                elseif ($motif == devoir) {
+                elseif ($motif == "devoir") {
                     switch($random1) {
                         case 1: 
                             echo "de n'avoir pas su faire ses devoirs mais un zombie ";
@@ -198,7 +198,7 @@
                             break;
                     }
                 }
-                elseif ($motif == malade) {
+                elseif ($motif == "malade") {
                     switch($random1) {
                         case 1: 
                             echo "d'avoir été malade mais un zombie ";
@@ -262,7 +262,7 @@
                             break;
                     }
                 }
-                elseif ($motif == absence) {
+                elseif ($motif == "absence") {
                     switch($random1) {
                         case 1: 
                             echo "d'avoir été absent mais un zombie ";
@@ -326,7 +326,7 @@
                             break;
                     }
                 }
-                elseif ($motif == nomotif) {
+                elseif ($motif == "nomotif") {
                     switch($random1) {
                         case 1: 
                             echo "mais un zombie ";
